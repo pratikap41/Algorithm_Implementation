@@ -28,8 +28,8 @@ int main(){
     cout<<"Enter size of array : ";
     cin>>n;
     int * arr = new int[n];
+    cout<<"Enter Elements : ";
     for(int i=0; i<n; i++){
-        cout<<"Enter Element : ";
         cin>>arr[i];
     }
     quickSort(arr,0,n-1);
