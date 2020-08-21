@@ -1,6 +1,22 @@
 // Searching Algorithms
 #include<iostream>
+#include<math.h>
 using namespace std;
+int jumpSearch(int * arr, int n, int x){
+    int step = (int)sqrt(n);
+    int prev = 0 ;
+    while(arr[step]<x && step<=n){
+        prev = step;
+        step += step;
+    }
+    for(int i=step-1; i<prev; i--){
+        if(arr[i]==x){
+            return i;
+        }
+    }
+    return -1;
+}
+
 int linerSearch(int * arr, int n,int  x){
     for(int i=0;i<n; i++){
         if(arr[i]==x){
@@ -37,6 +53,6 @@ int main(){
     }
     cout<<"Enter element to search : ";
     cin>>x;
-    cout<<binarySearch(arr,0,n,x);
+    cout<<jumpSearch(arr,n,x);
 
 }
