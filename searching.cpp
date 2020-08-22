@@ -4,15 +4,17 @@
 using namespace std;
 int jumpSearch(int * arr, int n, int x){
     int step = (int)sqrt(n);
-    int prev = 0 ;
-    while(arr[step]<x && step<=n){
-        prev = step;
-        step += step;
-    }
-    for(int i=step-1; i<prev; i--){
-        if(arr[i]==x){
-            return i;
+    int prev = 0;
+    while(step<=n){
+        if(x <= arr[step]){
+            for(int j=prev;j<=step; j++){
+                if(arr[j]==x){
+                    return j;
+                }
+            }
         }
+        prev = step;
+        step = (int)(step + sqrt(n));
     }
     return -1;
 }
@@ -33,9 +35,9 @@ int binarySearch(int * arr,int low,int high, int key){
             return mid;
         }
         else if(arr[mid]>key){
-            return binarySearch(arr,low,mid-1,key);
+            return binarySearch(arr,low,mid,key);
         }
-        else if(arr[mid<key]){
+        else if(arr[mid]<key){
             return binarySearch(arr,mid+1,high,key);
         }
     }
@@ -53,6 +55,6 @@ int main(){
     }
     cout<<"Enter element to search : ";
     cin>>x;
-    cout<<jumpSearch(arr,n,x);
+    cout<<binarySearch(arr,0,n,x);
 
 }
