@@ -35,7 +35,7 @@ int main(){
     cin>>n;
     vector<int> prime_numbers = get_prime_numbers(n);
     cout<<"Prime Numbers from 0 to "<<n<<" :\n";
-    for(int i=1; i<prime_numbers.size() ; i++){
+    for(int i=0; i<prime_numbers.size() ; i++){
         cout<<" "<<prime_numbers[i];
     }
 
