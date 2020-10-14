@@ -20,7 +20,6 @@ void quickSort(int * arr, int low, int high){
         arr[high]=temp;
         quickSort(arr,low,i-1);
         quickSort(arr,i+1, high);
-
     }
 }
 int main(){
