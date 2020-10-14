@@ -1,14 +1,42 @@
 #This Repository Contains C++ Implementation of Datastrctures and Algorithms code.
 ---
-##**Alorithms** :
+##**Algorithms** :
 ---
-###Sorting Algorithms:
-
+**Sorting Algorithms:**
+---
+*path*
 >/algorithms/sorting_algorithms/
 
-| Sorting |
+| Sorting Alogrithms|
 | :-----: |
-| Buuble Sort |
+| Bubble Sort |
 | Quick Sort |
-| Inseertion Sort |
+| Insertion Sort |
 | Selection Sort |
+
+---
+**Seraching Algorithms:**
+---
+*path*
+>/algorithms/Searching_algorithms/
+
+| Searching Alogrithms |
+| :-----: |
+| Liner Search |
+| Binary Search |
+| Ternary Search |
+| Jump Search |
+| Sentinal Search |
+
+---
+**Special Algorithms:**
+---
+*path*
+>/algorithms/Special_algorithms/
+
+| Special Alogrithms |
+| :-----: |
+| Dijkstra |
+| Union Find|
+| Sieve Of Eratosthence |
+| Prime Factorization |
