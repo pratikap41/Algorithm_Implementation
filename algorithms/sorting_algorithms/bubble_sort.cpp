@@ -7,7 +7,7 @@ void bubbleSort(int n,int* arr){
     for(int i=0; i<n; i++){
         bool flag = true;
         //after every iteration last i elements will be sorted
-        for(int j=0; j<n-i-1; j++){
+        for(int j=0; j<(n-1)-i; j++){
             if(arr[j]>arr[j+1]){
                 temp =arr[j+1];
                 arr[j+1]=arr[j];
