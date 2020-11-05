@@ -13,6 +13,9 @@
 | Quick Sort |
 | Insertion Sort |
 | Selection Sort |
+| Heap Sort |
+| Counting Sort |
+| Radix Sort |
 
 ---
 **Seraching Algorithms:**
